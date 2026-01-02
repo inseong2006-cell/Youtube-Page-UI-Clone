@@ -1,34 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
-  <title>Wenever94 | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Montserrat, sans-serif;
-      margin: 40px;
-      background: #f9f9f9;
-      color: #222;
-    }
-    h1 { font-size: 2.5rem; }
-    .project {
-      background: white;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 8px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini YouTube</title>
 </head>
 <body>
 
-  <h1>Hi, I’m Weeever94 👋</h1>
-  <p>Aspiring Frontend Developer</p>
+  <header>
+    <div class="div-menu">
+        <div class="menu">
+            <a href="#">
+                <img src="images/menu-icon-2.svg" alt="Menu Icon" width="25" height="auto" background="white">
+            </a>  
+        </div>
+    </div>
+    <div class="div-1">
+        <div class="logo">
+            <a href="https://www.youtube.com" class="link-no-style">
+                <img src="images/youtube-icon-2.svg" alt="YouTube Logo">
+            </a>
+        </div>
+    </div>
+    <div class="div-2">
+        <div class="spacer">
+            <div class="search-wrapper">
+                <form action="https://www.youtube.com/results" method="get" class="search-bar">
+                    <input type="text" placeholder="Search" name="search_query">
+                    <button type="submit">
+                        <img  src="images/search-icon-2.svg" alt="Search Icon" width="25" height="auto">
+                    </button>
+                </form>
+            </div>
+            <div class="voice"> 
+                <a href="#">
+                    <img src="images/mic-icon-2.svg" alt="Voice Search Icon" width="25" height="auto">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="div-3">
+        <div class="create">  
+            <a href="https://www.youtube.com/upload" class="no-underline">
+                <img src="images/create-icon-2.svg" alt="Create Icon" width="25" height="auto">
+                Create
+            </a>
+        </div>
+        <div class="notification">
+            <a href="#">
+                <img src="images/notification-icon.svg" alt="Notification Icon" width="25" height="auto">
+            </a>
+        </div>
+        <div class="user">
+            <a href="https://www.youtube.com/account" class="no-underline">
+                <img src="images/user-icon-2.png" alt="User Icon" width="35 " height="auto">
+            </a>
+        </div>
+    </div>
+    </header>
 
-  <div class="project">
-    <h2>YouTube-style Layout Project</h2>
-    <p>HTML & CSS layout inspired by YouTube.</p>
-    <a href="#">View project</a>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-icons">
+        <a href="https://www.youtube.com/">
+          <img src="images/home-icon-2.svg" alt="home icon" width ="25" height="auto" class="icons" id="home-icon">
+          <span class="label">Home</span>
+        </a>
+      </div>
+      <div class="sidebar-icons">
+        <a href="https://www.youtube.com/shorts/">
+          <img src="images/shorts-icon-2.svg" alt="shorts image" width="25" height="auto" class="icons" id="shorts-icon">
+          <span class="label">Shorts</span>
+        </a>
+      </div>
+      <div class="sidebar-icons">
+        <a href="https://www.youtube.com/feed/subscriptions">
+          <img src="images/subscribe-icon-2.svg" alt="subscription icon" width="25" height="auto" class="icons" id="subscriptions-icon">
+          <span class="label">Subscriptions</span>
+        </a>
+      </div>
+      <div class="sidebar-icons">
+        <a href="https://www.youtube.com/feed/history">
+          <img src="images/history-icon-2.svg" alt="history icon" width="25" height="auto" class="icons" id="history-icon">
+          <span class="label">History</span>
+        </a>
+      </div>
+      <div class="sidebar-icons">
+        <a href="https://www.youtube.com/feed/you">
+          <img src="images/you-icon-2.svg" alt="your videos icon" width="25" height="auto" class="icons" id="you-icon">
+          <span class="label">You</span>
+        </a>
+      </div>
+      
+    </aside>
+    <main class="main">
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=pzt6SmvGpXk" class="video-card">
+          <img src="https://img.youtube.com/vi/pzt6SmvGpXk/0.jpg" class="thumbnail" alt="Sacrifice ft. G.E.M. video thumbnail">
+          <div class="video-info">
+            <h3>Sacrifice ft. G.E.M. (鄧紫棋) (Official Music Video)</h3>
+            <h4>G.E.M.</h4>
+            <h5>115M views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=ADaZLxI3uWg" class="video-card">
+          <img src="https://img.youtube.com/vi/ADaZLxI3uWg/0.jpg" class="thumbnail" alt="KT vs T1 | WORLDS 2025 | Finals thumbnail">
+          <div class="video-info">
+            <h3>KT vs T1 | WORLDS 2025 | Finals</h3>
+            <h4>LoL Esports</h4>
+            <h5>9.1M views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=jWjrdz-lLdU" class="video-card">
+          <img src="https://img.youtube.com/vi/jWjrdz-lLdU/0.jpg" class="thumbnail" alt="Worlds 2024 - T1 vs BLG - Grand Final thumbnail">
+          <div class="video-info">
+            <h3>Worlds 2024 - T1 Vs BLG - Grand Final</h3>
+            <h4>LoL Esports</h4>
+            <h5>10.4M views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=5FrhtahQiRc" class="video-card">
+          <img src="https://img.youtube.com/vi/5FrhtahQiRc/0.jpg" class="thumbnail" alt="Heavy Is The Crown ft. Linkin Park video thumbnail">
+          <div class="video-info">
+            <h3>Heavy Is The Crown ft. Linkin Park (Official Music Video) </h3>
+            <h4>League of Legends</h4>
+            <h5>93M views </h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=vlRt36fKgaw" class="video-card">
+          <img src="https://img.youtube.com/vi/vlRt36fKgaw/0.jpg" class="thumbnail" alt="The Best Plays From The Grand Finals | Worlds 2024 thumbnail">
+          <div class="video-info">
+            <h3>The Best Plays From The Grand Finals | Worlds 2024</h3>
+            <h4>LoL Esports</h4>
+            <h5>2M views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=C3GouGa0noM" class="video-card">
+          <img src="https://img.youtube.com/vi/C3GouGa0noM/0.jpg" class="thumbnail" alt="GODS ft. NewJeans (뉴진스) (Official Music Video) | Worlds 2023 Anthem thumbnail">
+          <div class="video-info">
+            <h3>GODS ft. NewJeans (뉴진스) (Official Music Video)</h3>
+            <h4>League of Legends</h4>
+            <h5>137M views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=HMXmTsEXuJY" class="video-card">
+          <img src="https://img.youtube.com/vi/HMXmTsEXuJY/0.jpg" class="thumbnail" alt="Everything FAKER did at WORLDS 2024 | Finals MVP Highlights thumbnail">
+          <div class="video-info">
+            <h3>Everything FAKER did at WORLDS 2024</h3>
+            <h4>OPLOLReplay</h4>
+            <h5>304k views</h5>
+          </div>
+        </a>
+      </div>
+      
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=jwLEJIoz-Yg" class="video-card">
+          <img src="https://img.youtube.com/vi/jwLEJIoz-Yg/0.jpg" class="thumbnail" alt="20 Times Faker Proved he's the BEST in the game thumbnail">
+          <div class="video-info">
+            <h3>20 Times Faker Proved he’s the BEST in the game</h3>
+            <h4>OPLOLReplay</h4>
+            <h5>2.1M views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=jNUTxvki_d0" class="video-card">
+          <img src="https://img.youtube.com/vi/jNUTxvki_d0/0.jpg" class="thumbnail" alt="Hell’s Greatest Dad Sing-Along | Hazbin Hotel thumbnail">
+          <div class="video-info">
+            <h3>Hell’s Greatest Dad Sing-Along | Hazbin Hotel</h3>
+            <h4>Hazbin Hotel • Prime Video</h4>
+            <h5>86M views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=5eZonu8XsEs" class="video-card">
+          <img src="https://img.youtube.com/vi/5eZonu8XsEs/0.jpg" class="thumbnail" alt="Hazbin Hotel – Stagione 2 Clip Gravity thumbnail">
+          <div class="video-info">
+            <h3>Gravity - Hazbin Hotel | Prime Video</h3>
+            <h4>Prime Video</h4>
+            <h5>13M views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=GJQpBUcKhTk" class="video-card">
+          <img src="https://img.youtube.com/vi/GJQpBUcKhTk/0.jpg" class="thumbnail" alt="Brighter Sing-Along — Hazbin Hotel S2 thumbnail">
+          <div class="video-info">
+            <h3>Brighter Sing-Along — Hazbin Hotel S2</h3>
+            <h4>Prime Video</h4>
+            <h5>13M views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=h_TAtDWN_X8" class="video-card">
+          <img src="https://img.youtube.com/vi/h_TAtDWN_X8/0.jpg" class="thumbnail" alt="BRIGHTER [Metal Ver.] – Hazbin Hotel (Caleb Hyles) thumbnail">
+          <div class="video-info">
+            <h3>BRIGHTER [Metal Ver.] – Hazbin Hotel (Caleb Hyles)</h3>
+            <h4>Caleb Hyles</h4>
+            <h5>233k views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=55kAEhmtdyo" class="video-card">
+          <img src="https://img.youtube.com/vi/55kAEhmtdyo/0.jpg" class="thumbnail" alt="Video thumbnail">
+          <div class="video-info">
+            <h3>I Investigated Companies That Control EVERYTHING</h3>
+            <h4>Sambucha</h4>
+            <h5>373k views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=KZjJplK4DQM" class="video-card">
+          <img src="https://img.youtube.com/vi/KZjJplK4DQM/0.jpg" class="thumbnail" alt="Video thumbnail">
+          <div class="video-info">
+            <h3>I Tested Themed Hotels</h3>
+            <h4>Sambucha</h4>
+            <h5>443k views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=DqPzXYmrnYg" class="video-card">
+          <img src="https://img.youtube.com/vi/DqPzXYmrnYg/0.jpg" class="thumbnail" alt="Video thumbnail">
+          <div class="video-info">
+            <h3>Welcome to Elohell (ft. ‪@wonder_music‬ ) | League of Legends Cinematic Parody</h3>
+            <h4>Dumbs</h4>
+            <h5>407k views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=H1Dvg2MxQn8" class="video-card">
+          <img src="https://img.youtube.com/vi/H1Dvg2MxQn8/0.jpg" class="thumbnail" alt="Video thumbnail">
+          <div class="video-info">
+            <h3>Liszt - La Campanella (100,000 special)</h3>
+            <h4>Rousseau</h4>
+            <h5>53M views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=csDfJ2-WmSA" class="video-card">
+          <img src="https://img.youtube.com/vi/csDfJ2-WmSA/0.jpg" class="thumbnail" alt="Video thumbnail">
+          <div class="video-info">
+            <h3>T1 vs BLG : The Plays You Missed</h3>
+            <h4>LoL Dobby</h4>
+            <h5>262K views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=UQHo4neviTI" class="video-card">
+          <img src="https://img.youtube.com/vi/UQHo4neviTI/0.jpg" class="thumbnail" alt="Video thumbnail">
+          <div class="video-info">
+            <h3>When game choices make no difference - Choice</h3>
+            <h4>Viva La Dirt League</h4>
+            <h5>6.6M views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=2u0kJeag5Ls" class="video-card">
+          <img src="https://img.youtube.com/vi/2u0kJeag5Ls/0.jpg" class="thumbnail" alt="Video thumbnail">
+          <div class="video-info">
+            <h3>I tried the most luxurious Disney restaurant </h3>
+            <h4>Dylan Huynh</h4>
+            <h5>2M views</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-wrapper">
+        <a href="https://www.youtube.com/watch?v=p8K0N0ROKg8" class="video-card">
+          <img src="https://img.youtube.com/vi/p8K0N0ROKg8/0.jpg" class="thumbnail" alt="20 MOST POPULAR TUNES EVER thumbnail">
+          <div class="video-info">
+            <h3>20 MOST POPULAR TUNES EVER</h3>
+            <h4>PianoX•</h4>
+            <h5>11M views</h5>
+          </div>
+        </a>
+      </div>
+
+    </main>
   </div>
 
 </body>
